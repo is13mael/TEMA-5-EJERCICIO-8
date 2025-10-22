@@ -5,8 +5,12 @@ public class App {
 
         int i = 1;
         while (i <= 10){
+            try{
             System.out.println(numero + " x " + i + " = " + (numero * i));
             i++;
+            }catch(NumberFormatException e){
+                System.out.println("Numero entero introducido.");
+            }
         }
     }
 }
